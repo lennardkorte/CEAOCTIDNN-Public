@@ -32,7 +32,7 @@
 
 ## Quickstart Guide for Linux
 **Note**: Training data for OCT are not provided in this repository due to data protection reasons.
-1. Clone the [Repository](https://github.com/lennardkorte/IDDATDLOCT/archive/refs/heads/main.zip) to your home directory
+1. Clone the [Repository](https://github.com/lennardkorte/CEAOCTIDNN-Public/archive/refs/heads/main.zip) to your home directory
 1. Add training data under: ```./data/datasets/```
 1. Install [Docker and NVIDIA Container Toolkit](#for-running-in-docker)
 1. execute training and testing
@@ -47,7 +47,7 @@
     - minimum 100 GB SSD Storage
 
 ## Academic work
-See [Academic work](https://github.com/lennardkorte/IDDATDLOCT/tree/main/academic%20work)
+See [Academic work](https://github.com/lennardkorte/CEAOCTIDNN-Public/tree/main/academic%20work)
 
 ## Features
 This pipeline facilitates the training and testing of deep learning models with a streamlined approach. It supports extensive customization options for the training process, including adaptable parameters through a configuration file or directly within the code. Features such as checkpoints and logs enable detailed monitoring and analysis. Users can enhance the pipeline's functionality by integrating different model architectures or image transformation techniques. Furthermore, it provides the capability to generate samples of processed images for visual inspection. For comprehensive details, refer to the referenced academic publications or the usage documentation provided below.
@@ -288,7 +288,7 @@ At the initiation of the application, configurations are duplicated and logged w
 In scenarios where frequent or rapid modifications to configurations are necessary, leveraging command line options proves advantageous. Registering custom options allows for seamless alterations using CLI flags, enhancing usability and flexibility.
 
  ```python
-    args = argparse.ArgumentParser(description='IDDATDLOCT')
+    args = argparse.ArgumentParser(description='CEAOCTIDNN')
     args.add_argument('-cfg', '--config', default=None, type=str, help='config file path (default: None)')
     args.add_argument('-gpu', '--gpus', default='0', type=str, help='indices of GPUs to enable (default: all)')
     # Add more custom args here
