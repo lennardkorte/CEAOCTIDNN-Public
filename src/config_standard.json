@@ -1,0 +1,64 @@
+
+{
+    "name": "run_0",
+    "group": "group_0",
+    "overwrite_run": false,
+    "overwrite_configurations": false,
+    "gpu": 0,
+
+    "dataset_no": 1,
+    "sample_no": 20,
+    
+    "use_cuda": true,
+    "deterministic_training": true,
+    "deterministic_batching": true,    
+    
+    "architecture": "resnet50",
+    "arch_version": 2.0,
+    "pretrained": true,
+    "num_classes": 2,
+    "optimizer": "Adam",
+    "weight_decay": 0.01,
+    "momentum": 0.9,
+    "dropout": 0.3,
+
+    "set_percentage_cv": 80,           
+    "set_percentage_val": 20,           
+
+    "preload": false,
+    "batch_size": 8,
+    
+    "enable_wandb": false,
+    "wb_project": "new_project",
+
+    "calc_train_error": true,
+    "calc_and_peak_test_error": false,
+    
+    "trainandtest": true,
+    "num_cv": 5, 
+    "only_x_cv": 5,                    
+    "epochs": 80,                      
+    "learning_rate": 1e-6,
+    "scheduler_step_size": 1,
+    "scheduler_gamma": 0.97,
+
+    "MCdropout_test": false,
+    "mc_iterations": 100,   
+    
+    "early_stop_patience": 10,           
+    "early_stop_accuracy": 7,
+    "show_samples": true,
+    "binary_class": true,     
+
+    "c2_or_c3": "ivoct_both_c2/",       
+    "cart_or_pol": "orig",
+    
+    "auto_encoder": false,
+    "autenc_depth": 5,
+    "encoder_group": "group_0",
+    "encoder_name": "run_0",
+    "compare_classifier_predictions": true,
+    "mirror": false,
+    "freeze_enc": true,
+    "load_enc": true
+}
