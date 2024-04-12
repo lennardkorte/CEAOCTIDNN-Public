@@ -7,7 +7,6 @@
 
 - [Quick Start Guide for Linux](#quickstart-guide-for-linux)
 - [System Requirements](#system-requirements)
-- [Academic work](#academic-work)
 - [Features](#features)
     - [Logging](#logging)
     - [Checkpoints](#checkpoints)
@@ -45,9 +44,6 @@
     - NVIDIA Graphics Card
     - minimum 24GB RAM
     - minimum 100 GB SSD Storage
-
-## Academic work
-See [Academic work](https://github.com/lennardkorte/CEAOCTIDNN-Public/tree/main/academic%20work)
 
 ## Features
 This pipeline facilitates the training and testing of deep learning models with a streamlined approach. It supports extensive customization options for the training process, including adaptable parameters through a configuration file or directly within the code. Features such as checkpoints and logs enable detailed monitoring and analysis. Users can enhance the pipeline's functionality by integrating different model architectures or image transformation techniques. Furthermore, it provides the capability to generate samples of processed images for visual inspection. For comprehensive details, refer to the referenced academic publications or the usage documentation provided below.
